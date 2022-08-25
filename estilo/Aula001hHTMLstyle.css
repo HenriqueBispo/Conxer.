@@ -1,0 +1,250 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;400;600;700;900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+:root {
+    --cor-1: #01102c;
+    --cor-2: #8FE8EB;
+    --cor-3: #5ce1e6;
+    --cor-4: #22F5F1;
+    --cor-5: #57B0D9;
+    --cor-6: #54A8F0;
+    --cor-7: #508CE6;
+    --cor-8: #346DE0;
+    --cor-9: #2727ff;
+    --cor-10:#1C0051;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#googleads-topo {
+    background-color: rgb(200, 200, 200);
+    margin: 100px 0px 0px 15px;
+}
+
+
+.container_header {
+    max-width: 1080px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    position: absolute;
+    top: -1px;
+    background-color: var(--cor-1);
+    width: 100%;
+    padding: 10px;
+    box-shadow: -2px -2px 5px rgba(255, 255, 255, 0.568);
+}
+
+.logo {
+    transition-delay: .5s;
+    transition-duration: .5s;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+#a-logo {
+    text-decoration: none;
+    color: white;
+}
+
+#a-logo:hover {
+    transition-delay: .2s;
+    transition-duration: .5s;
+    color: rgb(200, 200, 200);
+}
+
+.logo,.sociais {
+    width: 25%;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu nav a {
+    transition-delay: .2s;
+    transition-duration: .5s;
+    color: rgba(255, 255, 255, 0.568);
+    text-decoration: none;
+    padding-right: 50px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu nav a:hover {
+    color: white;
+}
+
+.menu nav a::after {
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, var(--cor-4), var(--cor-8));
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width .6s ;
+}
+
+.menu nav a:hover::after {
+    width: 37px;
+}
+
+.sociais button {
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, var(--cor-4), var(--cor-8));
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sociais button:hover {
+    transition-delay: .1s;
+    transition-duration: .2s;
+    width: 45px;
+    height: 45px;
+    background-image: linear-gradient(45deg, var(--cor-4), var(--cor-9));
+}
+
+.sociais button i {
+    font-size: 20px;
+    color: #ffff;
+}
+
+/*Menu lateral*/
+
+    #menu-lateral {
+        display: flex;
+    }
+
+    aside {
+        position: absolute;
+        float: left;
+        width: 250px;
+        margin: 95px 5px 0px 0px;
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 88vh;
+        background-color: #f0f3f6;
+    }
+
+#titulo-menu-lateral {
+    margin: 10px 0px 10px 0px;
+    font-size: 1.9em;
+    color: var(--cor-9);
+    font-weight: bold;
+}
+
+#aula-moment {
+    display: block;
+    margin: 20px 0px 20px 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+
+.aula-no-moment {
+    display: block;
+    margin: 20px 0px 20px 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.aula-no-moment:hover {
+    color: var(--cor-9);
+}
+
+/*End Menu lateral*/
+
+.hrs {
+    margin: 15px 0px 15px 0px;
+}
+
+main {
+    margin: 100px auto;
+    width: 870px;
+    height: 100vh;
+}
+
+.h1_main{
+    
+    color: var(--cor-9);
+    font-weight: bold;
+    font-size: 4em;
+    font-family: 'Catamaran', sans-serif;
+}
+
+main {
+    width: 900px;
+}
+
+.titulo-conte {
+    font-size: 3em;
+    margin: 100px 0px;
+}
+
+.p-explicacao {
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.p-fonte {
+    font-size: 13px;
+    
+}
+
+.img-explicacao {
+    width: 900px;
+}
+
+footer {
+    margin: 2800px 0px 0px 0px;
+    background-color: var(--cor-1);
+    color: white;
+    width: 100%;
+    height: 200px;
+}
+
+.a_copy {
+    text-decoration: none;
+    color: white;
+}
+
+#h2_copy {
+    padding: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#h2_copy:hover {
+    padding: 20px 0px 20px 0px;
+    transition-duration: 1.5s;
+    background-color: var(--cor-3);
+    color: var(--cor-1);
+    cursor: pointer;
+}
