@@ -32,6 +32,11 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#googleads_main1 {
+    margin: 30px 0px 0px 0px;
+    background-color: rgb(200, 200, 200);
+}
+
 #googleads-topo {
     background-color: rgb(200, 200, 200);
     margin: 100px 0px 0px 15px;
@@ -139,7 +144,7 @@ header {
         display: flex;
     }
 
-    aside {
+    #paisagem_aside {
         position: absolute;
         float: left;
         width: 250px;
@@ -222,7 +227,7 @@ main {
 }
 
 footer {
-    margin: 2800px 0px 0px 0px;
+    margin: 3200px 0px 0px 0px;
     background-color: var(--cor-1);
     color: white;
     width: 100%;
@@ -247,4 +252,148 @@ footer {
     background-color: var(--cor-3);
     color: var(--cor-1);
     cursor: pointer;
+}
+
+/*
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    CELULAR
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+*/
+
+@media screen  and (orientation: portrait) {
+
+    #paisagem_aside {
+        display: none;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    body {
+        width: 100%;
+    }
+    
+    #googleads-topo {
+        display: none;
+    }
+    
+    
+    #googleads_main1 {
+        
+        width: 100%;
+        margin: 10px 0px 0px 0px;
+        background-color: rgb(200, 200, 200);
+    }
+        
+    .logo {
+        margin-top: -150px;
+        cursor: pointer;
+        font-size: 50px;
+        color: white;
+    }
+    
+    .logo:hover {
+        color: white;
+    }
+    
+    .menu {
+        width: 50%;
+    }
+    
+    nav {
+        margin-top: 50px;
+    }
+    
+    .menu nav a {
+        color: rgba(255, 255, 255, 0.568);
+        text-decoration: none;
+        padding-right: 50px;
+        font-size: 17px;  
+    }
+    
+    .menu nav a:hover {
+        color: rgba(255, 255, 255, 0.568);
+    }
+    
+    .menu nav a::after {
+        display: none;
+    }
+    
+    .sociais button {
+        margin: 0px 10px 5px 0px;
+        width: 40px;
+        height: 40px;
+        background-image: linear-gradient(45deg, var(--cor-4), var(--cor-8));
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    
+    .sociais button:hover {
+        width: 40px;
+        height: 40px;
+        background-image: linear-gradient(45deg, var(--cor-4), var(--cor-8));
+    }
+    
+    .sociais button i {
+        font-size: 20px;
+        color: #ffff;
+    }
+    
+    .sociais button i:hover {
+        font-size: 20px;
+        color: #ffff;
+    }
+    
+    main {
+        margin: 0px;
+        width: 100%;
+    }
+    
+    #aulas {
+        width: 100%;
+        border: 1px solid rgb(175, 175, 175);
+        border-radius: 10px;
+    }
+    
+    .h1_main{
+        margin-top: 200px;
+        text-align: center;
+        color: var(--cor-9);
+        font-weight: bold;
+        font-size: 3em;
+        font-family: 'Catamaran', sans-serif;
+    }
+
+    p{
+        font-size: 10px;
+    }
+
+    .img-explicacao {
+        width: 100%;
+    }
+    
+    #conta_main {
+        padding: 10px 10px 10px 25px ;
+        color: white;
+        background-color: var(--cor-9);
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+    .p_main {
+        width: 300px;
+        text-align: center;
+    }
+    
+    footer {
+        margin: ;
+    }
+
+
+    
+    
+    
 }
